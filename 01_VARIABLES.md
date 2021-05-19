@@ -27,6 +27,11 @@ class Snake:
         self.head = self.snake[0]
         ...
 ```
+
+## Why do this
+
+**In the event you need to change the value of the variables**, they are all in a single space in your code: **right at the top**. So, instead of changing the values everytime these variables show up in your code (bummer), you can do this **one single time**. Much easier and time saving.
+
 ---
 
 # PT: Variáveis no Topo
@@ -58,4 +63,8 @@ class Snake:
         self.head = self.snake[0]
         ...
 ```
+
+## Porquê fazer isso
+
+**No caso de você precisar mudar o valor das variáveis**, elas estão todas alocadas em um único espaço no seu código: **lá no topo**. Então, em vez de alterar as variáveis todas as vezes em que elas aparecem no seu código (chatão), você pode fazer isso **uma única vez**. Mais fácil e economiza tempo.
 
