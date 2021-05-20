@@ -6,7 +6,7 @@ There is a clean way to deal with variables in a code.
 
  They are in all caps.
 
-```
+```python
 # -- REAL EXAMPLE FROM THE OOP-SNAKE-GAME CODE -- #
 
 from turtle import Turtle
@@ -42,8 +42,8 @@ Se existe um grupo de variáveis que você CONSTANTEMENTE utiliza no seu código
 
 Essas variáveis ficam em caixa alta.
 
-```
-# -- EXEMPPLO REAL DO JOGO OOP-SNAKE-GAME -- #
+```python
+# -- EXEMPLO REAL DO JOGO OOP-SNAKE-GAME -- #
 
 from turtle import Turtle
 

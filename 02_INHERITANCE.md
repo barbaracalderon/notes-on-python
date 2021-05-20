@@ -20,12 +20,12 @@ Let's check out the code.
 
 I got two classes: the Chef class and the Pastry Chef class.
 
-```
+```python
 class Chef:
     def __init__(self):
 ```
 Now, the Pastry Chef inherits all attributes and methods of the Chef.
-```
+```python
 class PastryChef(Chef):
     def __init__(self):
         super().__init__()
@@ -44,7 +44,7 @@ Let's imagine two classes: class Worker and class Secretary.
 
 A secretary is a worker that works in an office. It does everything a worker is supposed to do, such as to be punctual and to work. But in its own way.
 
-```
+```python
 # PARENT CLASS (SUPER CLASS)
 
 class Worker:
@@ -55,7 +55,7 @@ class Worker:
         print('I work...')
 ```
 The secretary is a worker, so the secretary works... but it works in an office. We're gonna add the Secretary's own unique twist to the general work function of the super class.
-```
+```python
 # CHILD CLASS (SUB CLASS)
 
 class Secretary(Worker):
@@ -96,12 +96,12 @@ Vamos dar uma olhada no código.
 
 Eu tenho duas classes: a classe Chef e a classe Chef Sobremesa.
 
-```
+```python
 class Chef:
     def __init__(self):
 ```
 Now, the Pastry Chef inherits all attributes and methods of the Chef.
-```
+```python
 class PastryChef(Chef):
     def __init__(self):
         super().__init__()
@@ -123,11 +123,14 @@ Vamos imaginar duas classes: classe Trabalhador e a classe Secretária.
 
 A secretária é uma trabalhadora que faz a sua profissão em um escritório. Faz tudo que um trabalhador deve fazer, tal como ser pontual e executar o seu serviço. Mas... faz isso do seu jeito.
 
-*Worker: Trabalhador*
-*Secretary: Secretária*
-*'I work...': 'Eu trabalho...'*
+Pra garantir o entendimento: 
+- *Worker: Trabalhador*
+- *Secretary: Secretária*
+- *'I work...': 'Eu trabalho...'*
 
-```
+Agora vamos.
+
+```python
 # CLASSE PAI (SUPER CLASS)
 
 class Worker:
@@ -140,7 +143,7 @@ class Worker:
 A secretária é uma trabalhadora, então a secretária trabalha... mas trabalha em um escritório. A gente vai então adicionar essa coisa específica pra função de trabalhar geral que vem da classe-pai Trabalhador.
 
 
-```
+```python
 # CLASSE FILHO (SUB CLASS)
 
 class Secretary(Worker):
