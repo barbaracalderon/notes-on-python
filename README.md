@@ -7,7 +7,7 @@ These are my general notes on the Python language. It's like a notepad: useful t
 **THE CONTENTS OF THIS REPOSITORY**
 
 FILES | CONTENTS
------ | ---------
+:----- | :---------
 01_VARIABLES.md | Variables on top and why do this
 02_INHERITANCE.md | Class Inheritance; the Chef example; general concept; ```super().```
 03_FILE_MANAGEMENT.md | Methods ```open(), read(), write(), close()```; overwrite or append; 
@@ -24,7 +24,7 @@ Minhas anotações gerais sobre a linguagem Python. É como um caderno: útil pa
 **CONTEÚDOS DESSE REPOSITÓRIO**
 
 ARQUIVOS | CONTEÚDOS
--------- | ---------
+:-------- | :---------
 01_VARIABLES.md | Variáveis no topo e porquê fazer isso
 02_INHERITANCE.md | Herança de Classe; exemplo do Chef; conceito genral; ```super()```
 03_FILE_MANAGEMENT.md | Métodos ```open(), read(), write(), close()```; sobrescrever ou append no final; 
