@@ -26,7 +26,7 @@ Minhas anotações gerais sobre a linguagem Python. É como um caderno: útil pa
 ARQUIVOS | CONTEÚDOS
 :-------- | :---------
 01_VARIABLES.md | Variáveis no topo e porquê fazer isso
-02_INHERITANCE.md | Herança de Classe; exemplo do Chef; conceito genral; ```super()```
+02_INHERITANCE.md | Herança de Classe; exemplo do Chef; conceito geral; ```super()```
 03_FILE_MANAGEMENT.md | Métodos ```open(), read(), write(), close()```; sobrescrever ou append no final; 
 Continua... | ...
 

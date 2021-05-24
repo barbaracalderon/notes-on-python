@@ -15,7 +15,7 @@ METHOD | WHAT IT DOES | WHAT IT RETURNS
 
 **Remember to ALWAYS close your files.**
 
-## 1. Read your File - ```Read()```
+## Read your File - ```Read()```
 Here's an example.
 
 ```python
@@ -37,7 +37,7 @@ with open("my_file.txt") as file:
 # which stands for "read".
 ```
 
-## 2. Write in your File - ```Write()```
+## Write in your File - ```Write()```
 
 There two ways you can do this: overwrite your text or add more text to original.
 
@@ -62,6 +62,35 @@ Important to mention.
 
 If you try to write in a file that **does not exist**, then Python will **create the file** for you and write inside it.
 
+## Absolute and Relative File Paths
+
+It's important to locate your file.
+
+This is necessary if you want to manage it: how will you open your file if you don't know where it's located?
+
+There are two ways to know the path of your file: **relative** and **absolute**.
+
+**ABSOLUTE**: the location of your file **from the origin (root folder)**. The origin is usually the Hard Drive. In Windows, this is the ```C:\```
+
+*PS: Right-click on your file and search "Location".*
+
+**RELATIVE**: the location of your file **from where you are working**. Simply put: you are coding Python inside a file in your computer and you must locate another file in order to open in your current file. 
+
+Here is how they look.
+
+```
+/                               -> Represents absolute path
+./                              -> Represents relative path
+../                             -> Go back in folders
+../../                          -> Go back two folders
+
+# ABSOLUTE FILE PATH (Example):
+/Users/Basic/Desktop/my_text.txt
+
+# RELATIVE FILE PATH (Example):
+./my_text.txt                   -> same folder I currently am
+../Desktop/my_text.txt          -> (go up one folder, enter it)
+```
 ---
 # PT: Gerenciando Arquivos
 
@@ -80,7 +109,7 @@ MÉTODO | O QUE ELE FAZ | O QUE ELE RETORNA
 
 **SEMPRE lembre de fechar os seus arquivos.**
 
-## 1. Ler o Arquivo - ```read()```
+## Ler o Arquivo - ```read()```
 
 Um exemplo.
 
@@ -104,7 +133,7 @@ with open("meu_arquivo.txt") as arquivo:
 # com mode="r" que significa "read", de ler.
 ```
 
-## 2. Escreva no Arquivo - ```write()```
+## Escreva no Arquivo - ```write()```
 
 Tem duas formas de fazer isso: sobrescrevendo o texto original ou adicionando mais ao texto original (sem apagá-lo).
 
@@ -129,3 +158,29 @@ Importante mencionar.
 
 Se você tentar escrever em um arquivo **que não existe**, então o Python **vai criar o arquivo** pra você e escrever dentro dele.
 
+## Caminhos Absoluto e Relativo do Arquivo
+
+É importante saber localizar seu arquivo. Como você vai abri-lo se não sabe como localizar o caminho (path) dele?
+
+Tem duas formas de saber o path do seu arquivo: **relativo** e **absoluto**.
+
+**ABSOLUTO**: é o caminho do seu arquivo **em relação à origem (pasta raiz)**. A origem normalmente é o HD. No Windows, é o ```C:\```
+
+*PS: clique com o botão direito do mouse e procure por "location".*
+
+**RELATIVO**: é a localização do seu arquivo **a partir de onde você está trabalhando**. Resumidamente: você tá codando em Python no seu arquivo e precisa localizar outro arquivo diferente para abrir no seu código. 
+
+Resumão embaixo.
+```
+/                               -> Representa caminho absoluto (raiz)
+./                              -> Representa caminho relativo
+../                             -> Voltar uma pasta
+../../                          -> Voltar duas pastas
+
+# CAMINHO ABSOLUTO DO ARQUIVO (Exemplo):
+/Users/Basic/Desktop/meu_texto.txt
+
+# CAMINHO RELATIVO DO ARQUIVO (Exemplo)
+./meu_texto.txt                 -> mesma pasta de onde estou
+../Desktop/meu_texto.txt        -> (volta uma pasta e entra nela)
+```
