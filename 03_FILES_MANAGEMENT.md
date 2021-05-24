@@ -1,5 +1,7 @@
 # EN: Files Management
 
+*PS: My [oop-snake-game](https://github.com/barbaracalderon/oop-snake-game) project used these concepts.*
+
 Here are some basic things you can do with your text files using Python: **open, read, write, close**. 
 
 They are built-in methods in Python.
@@ -62,6 +64,8 @@ If you try to write in a file that **does not exist**, then Python will **create
 
 ---
 # PT: Gerenciando Arquivos
+
+*PS: Meu projeto [oop-snake-game](https://github.com/barbaracalderon/oop-snake-game) usou esses conceitos.*
 
 Coisas básicas que você consegue fazer com seus arquivos de texto usando Python: **abrir, ler, escrever, fechar**. Do inglês: "open, read, write, close". 
 
