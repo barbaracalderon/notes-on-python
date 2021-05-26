@@ -10,6 +10,7 @@ METHOD | WHAT IT DOES | WHAT IT RETURNS
 ------ | ------------ | ----------------
 **```Open()```** | It opens your file (in the background). You won't see it happening, though | Nothing
 **```Read()```** | It "reads" your file | Returns a string of the text inside the file
+**```Readlines()```** | It "reads" your file | Returns each line as a list item in a list object
 **```Write()```** | It writes a string inside your file. | Nothing
 **```Close()```** | It closes your file (in the background). You won't see it happening, though | Nothing
 
@@ -35,6 +36,16 @@ with open("my_file.txt") as file:
 # It closes automatically. The "with" handles it.
 # By default, the second parameter in open() is always mode="r"
 # which stands for "read".
+```
+
+### ```Readlines()``` Method
+
+It returns **all lines in the file as a list**, where **each line is an item** in the list object.
+
+```python
+with open("my_file.txt") as file:
+    file_list = file.readlines()
+    print(file_list)
 ```
 
 ## Write in your File - ```Write()```
@@ -104,6 +115,7 @@ MÉTODO | O QUE ELE FAZ | O QUE ELE RETORNA
 ------ | ------------ | ----------------
 **```Open()```** | Ele abre seu arquivo (por baixo dos panos). Você não vai ver isso acontecendo | Nada
 **```Read()```** | Ele "lê" o seu arquivo | Retorna uma string com o texto que tá dentro do arquivo
+**```Readlines()```** | Ele "lê" o seu arquivo | Retorna cada linha como um item de lista no objeto lista
 **```Write()```** | Ele escreve uma string dentro do seu arquivo | Nada
 **```Close()```** | Ele fecha o seu arquivo (por baixo dos panos). Você não vai ver isso acontecendo | Nada
 
@@ -131,6 +143,16 @@ with open("meu_arquivo.txt") as arquivo:
 # Ele fecha automaticamente. O "with" faz isso.
 # Por padrão, o segundo parâmetro de open() tá sempre
 # com mode="r" que significa "read", de ler.
+```
+
+### Método ```Readlines()```
+
+Ele retorna **todas as linhas do arquivo como uma lista**, em que **cada linha é um item** em um objeto lista.
+
+```python
+with open("meu_arquivo.txt") as arquivo:
+    lista_arquivo = arquivo.readlines()
+    print(lista_arquivo)
 ```
 
 ## Escreva no Arquivo - ```write()```
