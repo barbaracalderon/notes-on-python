@@ -364,14 +364,14 @@ data.to_csv("new_data.csv")
 ```
 Um arquivo será criado na mesma pasta em que você está trabalhando.
 
-## Information Table
+## Tabela de Informações
 
-LIBRARY | SERIES OR DATAFRAME| METHODS | WHAT IT DOES | WHAT IT RETURNS
+BIBLIOTECA | SERIES OU DATAFRAME| MÉTODOS | O QUE FAZ | O QUE RETORNA
 :------- | :------------------ | :------- | :------------ | :----------------
-csv *(built-in)* | - | ```reader()``` | It reads the file and output the data | It returns the content as a csv.reader object, which can be looped through: now, each line is a list and each word is an item inside the line list
-pandas *(install package)* | dataframe | ```.to_dict()``` | It morphs the data into a Python dictionary | Nothing
-pandas *(install package)* | series | ```.to_list()``` | It morphs the data axis into a Python list | Nothing
-pandas *(install package)* | series | ```.mean()``` | It calculates the average number of an axis | Returns the average
-pandas *(install package)* | series | ```.max()``` | It locates the maximum value of an axis | Returns the maximum value
-pandas *(install package)* | dictionary -> dataframe | ```.DataFrame()``` | It morphs your dictionary to a dataframe | Nothing
-pandas *(install package)* | dataframe | ```.to_csv(data)``` | It creates a CSV file for your dataframe | Nothing
+csv *(vem instalado)* | - | ```reader()``` | Ele lê um arquivo e mostra os dados | Ele retorna o conteúdo como um objeto csv.reader, que pode ser laçado: agora, cada linha é uma lista e cada palavra é um item dentro dessa lista de linhas
+pandas *(instalar pacote)* | dataframe | ```.to_dict()``` | Ele transforma os dados em um dicionário Python | Nada
+pandas *(instalar pacote)* | series | ```.to_list()``` | Ele transforma os dados de um eixo em uma lista Python | Nada
+pandas *(instalar pacote)* | series | ```.mean()``` | Ele calcula a média numérica de um eixo | Retorna a média
+pandas *(instalar pacote)* | series | ```.max()``` | Ele localiza o valor máximo de um eixo | Retorna o valor máximo
+pandas *(instalar pacote)* | dicionário -> dataframe | ```.DataFrame()``` | Ele transforma o seu dicionário em um dataframe | Nada
+pandas *(instalar pacote)* | dataframe | ```.to_csv(data)``` | Ele cria um arquivo CSV para o seu dataframe | Nada
