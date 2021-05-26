@@ -11,7 +11,7 @@ FILES | CONTENTS
 01_VARIABLES.md | Variables on top and why do this
 02_INHERITANCE.md | Class Inheritance; the Chef example; general concept; ```super().```
 03_FILE_MANAGEMENT.md | Methods ```open(), read(), write(), close()```; overwrite or append; absolute and relative paths
-04_CSV_DATA_PANDAS_LIBRARY.md | the CSV built-in library; csv.reader(); the pandas library; pandas.read_csv(); pandas dataframe and series; dataframe.to_dict(); series.to_list(); series.mean(); series["axis"].max(); Get data in row; Create a dataframe from scratch and save it as a CSV file; information table
+04_CSV_DATA_PANDAS_LIBRARY.md | the CSV built-in library; ```csv.reader()```; the pandas library; ```pandas.read_csv()```; pandas dataframe and series; ```dataframe.to_dict()```; ```series.to_list()```; ```series.mean()```; ```series["axis"].max()```; Get data in row; Create a dataframe from scratch and save it as a CSV file; information table
 To be continued | ...
 
 ---
