@@ -195,6 +195,8 @@ CSV = *Comma Separated Values*
 
 (*Valores Separados por Vírgula*)
 
+*Axis = Eixo*
+
 O CSV é um ótimo jeito de representar dados tabulados, que são dados quee cabem em uma tabela. Python trabalha bem com esses dados e tem, inclusive, bibliotecas que lidam com isso - como a biblioteca Pandas para Análise de Dados.
 
 Vamos olhar duas bibliotecas: CSV (já vem no Python, é built-in) e a Biblioteca Pandas.
