@@ -46,6 +46,17 @@ It returns **all lines in the file as a list**, where **each line is an item** i
 with open("my_file.txt") as file:
     file_list = file.readlines()
     print(file_list)
+
+# Each item will be added \n in the end. Be careful with this.
+# To remove it, here's a possible solution example.
+
+stripped_data_list = []
+with open("weather_data.csv", mode="r") as data:
+    data_list = data.readlines()
+    for each_item in data_list:
+        stripped_item = each_item.strip()         # strip() removes "\n"
+        stripped_data_list.append(stripped_item)
+    print(stripped_data_list)
 ```
 
 ## Write in your File - ```Write()```
@@ -153,6 +164,17 @@ Ele retorna **todas as linhas do arquivo como uma lista**, em que **cada linha �
 with open("meu_arquivo.txt") as arquivo:
     lista_arquivo = arquivo.readlines()
     print(lista_arquivo)
+
+# Cada item tem \n no final. Cuidado com isso.
+# Para remover, segue abaixo uma possível solução.
+
+stripped_data_list = []
+with open("weather_data.csv", mode="r") as data:
+    data_list = data.readlines()
+    for each_item in data_list:
+        stripped_item = each_item.strip()        # strip() remove "\n"
+        stripped_data_list.append(stripped_item)
+    print(stripped_data_list)
 ```
 
 ## Escreva no Arquivo - ```write()```
