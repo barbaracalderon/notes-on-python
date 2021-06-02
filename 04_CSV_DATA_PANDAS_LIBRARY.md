@@ -1,5 +1,7 @@
 # EN: CSV Files and Data
 
+*PS: My [US-state-quiz-game](https://github.com/barbaracalderon/US-states-quizz-game) project used these concepts. May be worth checking it out.*
+
 CSV = *Comma Separated Values*
 
 It's a great way to represent tabula data, which is data that fits into a table. Python works well with this and even got specific libraries to deal with it - like the Pandas library for Data Analysis.
@@ -190,6 +192,8 @@ pandas *(install package)* | dataframe | ```.to_csv(data)``` | It creates a CSV 
 ---
 
 # PT: Arquivos CSV e Dados
+
+*PS: Meu projeto [US-state-quiz-game](https://github.com/barbaracalderon/US-states-quizz-game) usou esses conceitos aqui. Talvez seja uma boa dar uma olhada.*
 
 CSV = *Comma Separated Values*
 
