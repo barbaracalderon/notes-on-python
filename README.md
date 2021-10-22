@@ -2,7 +2,7 @@
 
 *Under construction.*
 
-These are my general notes on the Python language. It's like a notepad: useful to keep track of information and come back later to review and refresh my memory.
+These are my general notes on the Python language. It's like a notepad: useful to keep track of information and come back later to review and refresh my memory. These notes are from miscellaneous courses.
 
 **THE CONTENTS OF THIS REPOSITORY**
 
@@ -20,7 +20,7 @@ To be continued | ...
 
 *Em construção.*
 
-Minhas anotações gerais sobre a linguagem Python. É como um caderno: útil para manter um registro das informações e voltar pra ele pra revisar e refrescar a memória.
+Minhas anotações gerais sobre a linguagem Python. É como um caderno: útil para manter um registro das informações e voltar pra ele pra revisar e refrescar a memória. Anotações de pontos de cursos variados.
 
 **CONTEÚDOS DESSE REPOSITÓRIO**
 
