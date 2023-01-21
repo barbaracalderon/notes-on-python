@@ -76,9 +76,16 @@ inner_function()                        # It prints: I'm inner.
 
 ## Python Decorators
 
-Let's imagine you have a bunch of functions in your Class or module. You want to add an extra piece of functionality 
-to all these functions: you might use a decorator function. It adds an additional function to the functionality 
-itself. An extra piece of something to that function.
+Here are some things about functions in Python.
+
+1. functions can have functionalities inputs and outputs
+2. functions are first-class objects: they can be passed around as arguments
+3. functions can be nested inside other functions
+4. functions can be returned as the output of another function without the need to be triggered
+
+Let's imagine you have a bunch of functions in your class or module. You want to add an extra piece of functionality 
+to all these functions: you might use a decorator function. The main purpose of a decorator is to add an additional 
+function to the functionality itself. An extra piece of something to the functions.
 
 For example, take a look below.
 
@@ -103,4 +110,63 @@ print(result)   # It prints: 5
 
 # The calculate function adds a bit of functionality to the declared functions above
 ```
+
+Let's create a Python Decorator. It looks like this:
+
+```python
+def decorator_function(one_function):
+    def wrapper_function():
+        one_function() 
+    return wrapper_function 
+```
+
+It is a function that wraps another function and gives it an additional functionality. 
+
+Let's say we have three functions and the hello_function takes 2 seconds before printing hello. It would look 
+something like this:
+
+```python
+import time
+def say_hello():
+    time.sleep(2)
+    print('Hello')
+
+def say_bye():
+    print('Bye!')
+
+def say_greeting():
+    print("How are you?")
+```
+
+What if we wanted the other functions to also take about 2 seconds before printing? We could surely write `time.sleep
+(2)` to each of these functions but that would be hard work. What if the code had 60 other functions that also 
+needed that? Another way of doing it would be to have this "delay" as a decorator function: it would add this extra 
+piece of functionality (taking 2 seconds before printing) to all the functions themselves.
+
+It would look like this:
+
+```python
+import time 
+
+def delay_decorator(function):
+    def wrapper_function():
+        time.sleep(2)
+        function()
+    return wrapper_function
+
+@delay_decorator
+def say_hello():
+    print('Hello')
+
+@delay_decorator
+def say_bye():
+    print('Bye')
+
+@delay_decorator
+def say_greeting():
+    print('How are you?')
+```
+
+Risking being repetitive, let's say it again: a decorator function is a function that wraps another function and 
+gives it another functionality (or even modifies it).
 
