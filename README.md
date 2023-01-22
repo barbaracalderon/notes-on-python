@@ -1,3 +1,5 @@
+_This repository is in English and Portuguese. // Esse repositório está em Português e Inglês._
+
 # Notes on Python
 
 *Under construction.*

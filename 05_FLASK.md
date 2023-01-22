@@ -221,3 +221,7 @@ def index():
 def hello():
     return 'Hello, World'
 ```
+
+## Exercise on Flask
+
+Here's a repository with a small exercise on Flask. It's a [guess-the-number game](https://github.com/barbaracalderon/flask-higher-lower).
