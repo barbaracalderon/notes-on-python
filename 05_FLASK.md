@@ -43,6 +43,14 @@ By providing the name to Flask, it will check if the Flask code is coming from t
 The "@" does something to the function. In the case of our code, it means that when the user is navigating the web and 
 hit home to our homepage, we're going to show the hello world. The syntax is called **Python Decorator**. 
 
+### Debug mode
+
+```python
+# Keeps the server running and reloading automatically
+if __name__ == "__main__":
+    app.run(debug=True)
+```
+
 
 ## Nested Functions
 
