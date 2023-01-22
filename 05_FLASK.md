@@ -170,3 +170,46 @@ def say_greeting():
 Risking being repetitive, let's say it again: a decorator function is a function that wraps another function and 
 gives it another functionality (or even modifies it).
 
+
+## Advanced Python Decorators (arguments)
+
+How do we pass a function that takes arguments themselves to a decorator function? We'll do this:
+
+```python
+class User:
+    def __init__(self, name):
+        self.name = name
+        self.is_logged_in = False
+        
+# This is our decorator function that takes function arguments
+def is_authenticated_decorator(function):
+    def wrapper(*args, **kwargs):
+        if args[0].is_logged_in is True:
+            function(args[0])
+    return wrapper
+
+# Our decorator function being used
+@is_authenticated_decorator
+def create_blog_post(user):
+    print(f"This is {user.name}'s new blog post.")
+
+new_user = User("Barbara")
+new_user.is_logged_in = True
+create_blog_post(new_user)
+```
+
+## Routing
+
+Let's take a look at what the [Flask documentation](https://flask.palletsprojects.com/en/2.2.x/) tells us about 
+routes. Here's the specific section on [Flask routing](https://flask.palletsprojects.com/en/2.2.x/quickstart/#routing).
+
+There are a number of things we could do with routing... and creating our website's path routes.
+```python
+@app.route('/')
+def index():
+    return 'Index Page'
+
+@app.route('/hello')
+def hello():
+    return 'Hello, World'
+```
