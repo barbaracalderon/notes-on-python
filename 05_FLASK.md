@@ -227,6 +227,78 @@ def hello():
 Here's a repository with a small exercise on Flask. It's a [guess-the-number game](https://github.com/barbaracalderon/flask-higher-lower).
 
 
+## Rendering HTML Files
+
+How do we render HTML files with flask? Well, see the code below where home returns the string "Hello World!"? That should return an actual HTML file rendered by Flask. 
+
+```python
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/"):
+def home():
+    return "Hello World!"
+
+if __name__ == "__main__":
+    app.run()
+```
+
+So, first thing you need is an HTML file. This should be ready. It's good practice to call it `index.html` if it's loaded in the home route. 
+
+Now that you have it, check out Flask documentation. There's a section called [Rendering Templates](https://flask.palletsprojects.com/en/2.2.x/quickstart/#rendering-templates). We're gonna do what it says.
+
+Basically...
+
+1. have your `index.html` file
+2. use the `render_template('index.html', name=name)` method
+3. create a `templates folder` located where `server.py` is
+4. move your `index.html` file inside the `templates folder`
+5. in case you have more files to render (like `png/jpeg` files), create a `static folder`
+6. move your other files to the `static folder`
+7. make sure all `href` inside `index.html` point to the files located inside the `static folder`
+
+It should look something like this:
+
+```python
+'''
+Your folders:
+/server.py
+/templates
+    /index.html
+/static
+    /image.jpeg
+    /logo.png
+'''
+
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/"):
+def home():
+    return render_template("index.html")
+
+if __name__ == "__main__":
+    app.run(debug=True)
+```
+
+## Dev Tools (Chrome)
+
+Here's a piece of advice I found useful: instead of editing your HTML file inside your editor of choice, do that in Chrome because it's visual... and then save it (to substitute the changes).
+
+Here's how you do it.
+
+Access the console log:
+
+`Chrome >> dev tools >> console.`
+
+Then write inside console tab:
+
+`document.body.contendEditable=true`
+
+Done.
+
 ---
 
 # PT: Flask
