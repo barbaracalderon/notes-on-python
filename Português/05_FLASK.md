@@ -231,3 +231,84 @@ def hello():
 ## Exercício usando Flask 
 
 Aqui vai um outro repositório meu com um exercício simples de Flask. Só clicar aqui no [guess-the-number game](https://github.com/barbaracalderon/flask-higher-lower).
+
+## Renderizando Arquivos HTML
+
+Como que a gente renderiza arquivos HTML no Flask? Como assim? Vê o código abaixo onde tem uma string "Hello World!" 
+retornando na função? Deveria retornar um arquivo HTML renderizado pelo Flask. Como fazer?
+
+```python
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/"):
+def home():
+    return "Hello World!"           # Essa linha aqui
+
+if __name__ == "__main__":
+    app.run()
+```
+
+A primeira coisa que tu vai precisar é um arquivo HTML. Isso já deve estar na mão. É uma boa prática chamar de 
+`index.html` se tiver carregado na rota da home. 
+
+Agora que você tem isso, dá uma olhada na Documentação Flask. Tem uma seção chamada [Rendering Templates](https://flask.
+palletsprojects.com/en/2.2.x/quickstart/#rendering-templates) (traduzindo: "Renderizando Templates").
+
+Pra deixar mais simples...
+
+1. tenha o seu arquivo `index.html`
+2. use o método `render_template('index.html', name=name)`
+3. crie uma `pasta templates` localizada onde o `server.py` está
+4. mova o seu arquivo `index.html` para essa `pasta templates`
+5. se você tem mais arquivos para renderizar (tipo um `png/jpeg`), crie uma `pasta static`
+6. coloque seus outros arquivos nessa `pasta static`
+7. garanta que os seus `href` no `index.html` estão apontando para os arquivos dentro da `pasta static`
+
+Pronto. Deve parece com algo mais ou menos assim:
+
+```python
+'''
+Suas pastas:
+/server.py
+/templates
+    /index.html
+/static
+    /image.jpeg
+    /logo.png
+'''
+
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/"):
+def home():
+    return render_template("index.html")
+
+if __name__ == "__main__":
+    app.run(debug=True)
+```
+
+## Dev Tools (Chrome) para edição de conteúdo no HTML
+
+Uma dica que eu achei bem interessante: em vez de editar o seu HTML dentro do seu editor de escolha, você consegue 
+fazer no próprio Chrome porque é visual... e daí depois salvar o arquivo para substituir as mudanças. Substitua o 
+arquivo anterior com esse novo que foi salvo.
+
+Você faz assim.
+
+Acesse o console no Chrome.
+
+`Chrome >> dev tools >> console.`
+
+Agora que você tá aqui, escreva no console o seguinte.
+
+`document.body.contentEditable=true`
+
+Pronto.
+
+Agora você consegue editar o conteúdo no arquivo HTML usando o próprio Chrome. Clique nas coisas, adicione coisas, 
+mude as coisas.
+
