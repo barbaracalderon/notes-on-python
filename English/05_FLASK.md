@@ -300,7 +300,7 @@ Access the console in Chrome.
 
 Now that you're there, write this inside the console tab.
 
-`document.body.contendEditable=true`
+`document.body.contentEditable=true`
 
 Done.
 
