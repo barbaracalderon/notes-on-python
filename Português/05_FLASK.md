@@ -312,3 +312,10 @@ Pronto.
 Agora você consegue editar o conteúdo no arquivo HTML usando o próprio Chrome. Clique nas coisas, adicione coisas, 
 mude as coisas.
 
+## Exercício sobre renderização de templates
+
+Para praticar um pouco sobre o funcionamento da renderização de temaplates, fiz um exercício que é uma versão menor 
+de um portfolio que roda com Flask. O design em si é do HTML5 Up e se chama "Astral". Eu troquei as cores de fundo, 
+editei texto, adicionei algumas imagens de projetos anteriores - além de torná-lo compatível com o Flask. 
+
+Você consegue encontrar o repo com o exercícío aqui: [flask-html5up-template](https://github.com/barbaracalderon/flask-html5up-template)
