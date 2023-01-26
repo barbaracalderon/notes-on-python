@@ -248,8 +248,9 @@ if __name__ == "__main__":
 So, the first thing you need is an HTML file. This should be ready. And it's good practice to call it `index.html` if 
 it's loaded in the home route. 
 
-Now that you have it, check out Flask Documentation. There's a section called [Rendering Templates](https://flask.
-palletsprojects.com/en/2.2.x/quickstart/#rendering-templates). We're gonna do what it says.
+Now that you have it, check out Flask Documentation. There's a section called 
+[Rendering Templates](https://flaskpalletsprojects.com/en/2.2.x/quickstart/#rendering-templates). 
+We're gonna do what it says.
 
 To put it simply...
 
@@ -305,3 +306,12 @@ Now that you're there, write this inside the console tab.
 Done.
 
 Now you can edit the content on the HTML file using Chrome. Just click, add things, change things.
+
+## Exercise on rendering templates
+
+So, to train this piece on rendering templates using Flask, I did another exercise. It's a smaller version of a 
+portfolio template that runs on Flask. The template design was by HTML5 UP, and it's called "Astral". I changed the 
+background colors, edited text and added images from previous projects - and also made it compatible to run on Flask.
+
+You can find the exercise here: the [flask-html5up-template](https://github.com/barbaracalderon/flask-html5up-template) 
+repository. 
