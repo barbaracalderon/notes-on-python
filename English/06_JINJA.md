@@ -31,6 +31,9 @@ To start, we'll need Flask.
 
 Jinja is already bundled with Flask. **No need to install Jinja separately**.
 
+This means, it will use the `template folder` and `static folder` as mandatory in Flask. 
+[More on it here](https://github.com/barbaracalderon/notes-on-python/blob/main/English/05_FLASK.md).
+
 We'll create an `index.html` file and render it through Flask's `render_template("index.html")` method. So, inside 
 the function that renders the method render_template, you can pass arguments there (through the keywords arguments, 
 aka **kwargs)... that will be used inside the `index.html` file to be manipulated by code **there**.
