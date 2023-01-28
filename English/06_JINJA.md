@@ -71,4 +71,4 @@ if __name__ == "__main__":
 ### Exercise on Footer
 
 The example above plus an additional footer that responds to the actual current year can be found on the repo [jinja 
-dynamic footer](https://github.com/barbaracalderon/jinja-dynamic-footer)
+dynamic footer](https://github.com/barbaracalderon/jinja-dynamic-footer) repo.
