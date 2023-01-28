@@ -40,7 +40,7 @@ It will look like something like this:
 ```python
 # --- server.py file --- #
 import random
-import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -70,4 +70,5 @@ if __name__ == "__main__":
 
 ### Exercise on Footer
 
-The example above plus an additional footer that responds to the actual current year can be found on the repo 
+The example above plus an additional footer that responds to the actual current year can be found on the repo [jinja 
+dynamic footer](https://github.com/barbaracalderon/jinja-dynamic-footer)
