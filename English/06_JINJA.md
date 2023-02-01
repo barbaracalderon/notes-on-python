@@ -2,7 +2,7 @@
 
 Jinja is a templating language built for Python. In practical terms, according to Dr. Angela Yu, "it allows us to 
 create the general layout of a blog, the styling and the structure, and replace the content with **dynamic content** 
-that is generatedd each time we load a specific page". 
+that is generated each time we load a specific page". 
 You can find the [Jinja Documentation page here](https://jinja.palletsprojects.com/en/3.1.x/).
 
 Think of a blog-like website that renders the same layout everywhere you go, but its content changes depending on 
@@ -78,7 +78,6 @@ The example above plus an additional footer that responds to the actual current 
 
 ### URL Building
 
-
 This is a way to allow us to direct the user to a specific page on our website. For example, in the home page, we could 
 have a link to the blog page. The way we could do it is by creating an anchor tag and positioning the `href` value 
 there to the blog page. But, in our case, because we're using Jinja templating language, the `href` value 
@@ -130,7 +129,6 @@ if __name__ == "__main__":
 Can we add arguments to that `url_for` method? Yes.
 
 Check below.
-
 ```python
 # --- index.html file --- #
 <html lang="en">
